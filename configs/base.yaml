@@ -1,0 +1,17 @@
+# Gravity base config (~128M parameters)
+# Usage: python examples/train_custom.py --data my_data.txt --d_model 768 --n_layers 12
+
+model:
+  d_model: 768
+  n_layers: 12
+  K: 64          # Coin parameter dimension
+  S: 3           # Number of field scales
+  C: 16          # Density channels
+  R: 5           # Window half-size
+  dropout: 0.1
+
+training:
+  seq_len: 1024
+  batch_size: 8
+  lr: 3.0e-4
+  epochs: 10

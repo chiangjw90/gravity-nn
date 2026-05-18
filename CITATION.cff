@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use Gravity in academic work, please cite as below."
+title: "Gravity: A Physics-Inspired O(N) Framework with O(1) Streaming State Across Dimensions"
+authors:
+  - family-names: Chiang
+    given-names: Chia-Wei
+    email: chiangjw90@gmail.com
+type: article
+year: 2026
+url: "https://github.com/chiangjw90/gravity-nn"
+repository-code: "https://github.com/chiangjw90/gravity-nn"
+license: Apache-2.0
+keywords:
+  - neural-network
+  - efficient-architecture
+  - physics-inspired
+  - streaming-state
+  - parallel-scan

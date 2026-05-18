@@ -1,0 +1,17 @@
+# Gravity small config (~15M parameters)
+# Good for research prototyping and ablations
+
+model:
+  d_model: 256
+  n_layers: 4
+  K: 64
+  S: 3
+  C: 16
+  R: 5
+  dropout: 0.1
+
+training:
+  seq_len: 1024
+  batch_size: 16
+  lr: 3.0e-4
+  epochs: 10

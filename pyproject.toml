@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gravity-nn"
+version = "0.1.0"
+description = "Gravity: A Physics-Inspired O(N) Neural Network Architecture with O(1) Inference State"
+readme = "README.md"
+license = {text = "AGPL-3.0"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Chia-Wei Chiang", email = "chiangjw90@gmail.com"},
+]
+keywords = ["deep-learning", "neural-network", "attention", "linear-complexity", "field-equation", "density-bottleneck"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+triton = ["triton>=2.1"]
+dev = ["pytest", "black", "ruff"]
+all = ["gravity-nn[triton,dev]"]
+
+[project.urls]
+Homepage = "https://github.com/chiangjw90/gravity-nn"
+Paper = "https://arxiv.org/abs/XXXX.XXXXX"
+Documentation = "https://github.com/chiangjw90/gravity-nn#readme"
+
+[tool.setuptools.packages.find]
+include = ["gravity", "gravity.*"]

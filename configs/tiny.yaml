@@ -1,0 +1,17 @@
+# Gravity tiny config (~555K parameters)
+# For quick experiments and sanity checks
+
+model:
+  d_model: 128
+  n_layers: 1
+  K: 64
+  S: 3
+  C: 16
+  R: 5
+  dropout: 0.0
+
+training:
+  seq_len: 512
+  batch_size: 32
+  lr: 1.0e-3
+  epochs: 5
