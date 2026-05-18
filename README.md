@@ -28,7 +28,7 @@ The architecture draws inspiration from classical field theory. Each token gener
 |--------|---------|-------------|-------|
 | Inference state (per layer) | 672 bytes | ~4 GB @128K | **6,000,000x** |
 | Memory @32K context | 140 MB | 12,902 MB | **92x less** |
-| Throughput @16K context | 2.5M tok/s | 336K tok/s | **7.5x faster** |
+| Throughput @16K context | 2.5M tok/s | 336K tok/s | **7.4x faster** |
 | Memory @65K context | 411 MB | OOM (A100 40GB) | **Gravity runs, TF can't** |
 | Streaming 1M tokens | 71 MB (constant) | Not feasible | **O(1) state** |
 
@@ -178,15 +178,17 @@ python examples/train_custom.py --data my_data.txt
 python examples/train_custom.py --data my_data.txt --d_model 768 --n_layers 12 --epochs 10
 ```
 
-Full reproduction scripts (OpenWebText 100M, SlimPajama 400M, benchmarks) will be released alongside the arXiv paper.
+For the small-scale benchmarks reported in the paper (Tables 2, 10, 11), see the reproduction notebooks in `notebooks/`.
 
 ## Model Configurations
 
 | Config | d_model | Layers | K | C | S | Params | Use case |
 |--------|---------|--------|---|---|---|--------|----------|
-| `tiny` | 128 | 1 | 64 | 16 | 3 | ~555K | Quick experiments |
+| `tiny` | 128 | 1 | 64 | 16 | 3 | ~555K | Quick experiments (multi-channel) |
 | `small` | 256 | 4 | 64 | 16 | 3 | ~15M | Research prototyping |
 | `base` | 768 | 12 | 64 | 16 | 3 | ~128M | Standard benchmarks |
+
+> **Note:** Paper Table 2 (PPL 4.36) uses a single-channel config (K=15, C=1, ~486K params) for character-level vocabulary. The configs above use multi-channel density (K=64, C=16). See `notebooks/` for the exact small-scale configurations.
 
 ## Project Structure
 
@@ -229,22 +231,6 @@ gravity-nn/
 └── LICENSE
 ```
 
-> For data profiling and curriculum training, see **[gravity-labeler](https://github.com/chiangjw90/gravity-labeler)**.
-
-## Labeler: Architecture-Agnostic Data Intelligence
-
-The Gravity Labeler is a **separate technical contribution** that works with any model:
-
-- A 5M-parameter Gravity probe computes `density_cv` and `phi_var_ratio` per document
-- Documents are classified by information dependency structure, not length
-- A 10,000-token FAQ may only need local context → short sequence
-- A 500-token legal clause may need full context → long sequence
-- Length-based methods can't distinguish these; Gravity's physics metrics can
-
-**Result**: 43.8% of documents get different bucket assignments. Transformer PPL improves 1.0-1.9% at 400M tokens.
-
-Install separately: `pip install gravity-labeler` — see **[gravity-labeler](https://github.com/chiangjw90/gravity-labeler)**
-
 ## Tests
 
 ```bash
@@ -255,9 +241,10 @@ pytest tests/ -v
 
 ```bibtex
 @article{chiang2026gravity,
-  title={Gravity: A Physics-Inspired O(N) Framework with O(1) State Across Dimensions},
+  title={Gravity: A Physics-Inspired O(N) Framework with O(1) Streaming State Across Dimensions},
   author={Chiang, Chia-Wei},
   year={2026},
+  publisher={Zenodo},
   doi={10.5281/zenodo.20273259},
   url={https://doi.org/10.5281/zenodo.20273259}
 }
