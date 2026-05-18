@@ -4,7 +4,7 @@
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Commercial License](https://img.shields.io/badge/commercial_license-available-orange.svg)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20273259.svg)](https://doi.org/10.5281/zenodo.20273259)
 [![Patent](https://img.shields.io/badge/patent-pending-red.svg)](PATENT.md)
 
 ---
@@ -263,15 +263,9 @@ pytest tests/ -v
 @article{chiang2026gravity,
   title={Gravity: A Physics-Inspired O(N) Framework with O(1) State Across Dimensions},
   author={Chiang, Chia-Wei},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-
-@article{chiang2026gravitycurriculum,
-  title={Gravity Curriculum: Data-Centric Training Optimization via Density-Derived Information Locality Labels},
-  author={Chiang, Chia-Wei},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
+  year={2026},
+  doi={10.5281/zenodo.20273259},
+  url={https://doi.org/10.5281/zenodo.20273259}
 }
 ```
 

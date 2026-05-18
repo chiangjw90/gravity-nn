@@ -32,7 +32,7 @@ all = ["gravity-nn[triton,dev]"]
 
 [project.urls]
 Homepage = "https://github.com/chiangjw90/gravity-nn"
-Paper = "https://arxiv.org/abs/XXXX.XXXXX"
+Paper = "https://doi.org/10.5281/zenodo.20273259"
 Documentation = "https://github.com/chiangjw90/gravity-nn#readme"
 
 [tool.setuptools.packages.find]

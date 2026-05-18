@@ -79,7 +79,8 @@ If you use Gravity in academic work, please cite:
   title={Gravity: A Physics-Inspired O(N) Framework with O(1) Streaming State Across Dimensions},
   author={Chiang, Chia-Wei},
   year={2026},
-  journal={arXiv preprint arXiv:XXXX.XXXXX}
+  doi={10.5281/zenodo.20273259},
+  url={https://doi.org/10.5281/zenodo.20273259}
 }
 ```
 

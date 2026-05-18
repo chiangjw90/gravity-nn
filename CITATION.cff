@@ -7,6 +7,7 @@ authors:
     email: chiangjw90@gmail.com
 type: article
 year: 2026
+doi: "10.5281/zenodo.20273259"
 url: "https://github.com/chiangjw90/gravity-nn"
 repository-code: "https://github.com/chiangjw90/gravity-nn"
 license: AGPL-3.0-or-later
