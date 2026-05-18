@@ -15,7 +15,8 @@ Usage:
     python examples/train_custom.py --data my_data.txt --d_model 768 --n_layers 12 --epochs 10
 
 Requirements:
-    pip install gravity-nn tiktoken
+    pip install -e .   # from repo root
+    pip install tiktoken
 """
 
 import sys

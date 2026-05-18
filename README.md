@@ -37,12 +37,6 @@ The architecture draws inspiration from classical field theory. Each token gener
 ## Install
 
 ```bash
-pip install gravity-nn
-```
-
-Or install from source:
-
-```bash
 git clone https://github.com/chiangjw90/gravity-nn.git
 cd gravity-nn
 pip install -e .
