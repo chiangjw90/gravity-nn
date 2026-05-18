@@ -2,9 +2,10 @@
 
 **Replace Transformer's O(N²) attention with O(N) field-equation processing. 672 bytes inference state per layer.**
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![Commercial License](https://img.shields.io/badge/commercial_license-available-orange.svg)](LICENSE)
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
-[![Patent](https://img.shields.io/badge/Patent-Pending-orange.svg)]()
+[![Patent](https://img.shields.io/badge/patent-pending-red.svg)](PATENT.md)
 
 ---
 
@@ -276,10 +277,11 @@ pytest tests/ -v
 
 ## License
 
-This project is dual-licensed:
+This software is offered under two licensing options:
 
-- **Apache 2.0** for open-source and academic/research use
-- **Commercial licensing** available — contact chiangjw90@gmail.com
+1. **AGPL-3.0** — for open-source use that complies with all AGPL-3.0 obligations, including source disclosure for network services (Section 13). Academic and research use is freely permitted under this option.
+
+2. **Commercial License** — for use cases where AGPL-3.0 obligations are not acceptable (proprietary products, closed-source SaaS, embedded/hardware implementations). Contact chiangjw90@gmail.com
 
 **Patent pending**: U.S. Provisional Patent Application filed March 2026. See [PATENT.md](PATENT.md) for details.
 

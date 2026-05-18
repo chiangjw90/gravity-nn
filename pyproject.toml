@@ -7,7 +7,7 @@ name = "gravity-nn"
 version = "0.1.0"
 description = "Gravity: A Physics-Inspired O(N) Neural Network Architecture with O(1) Inference State"
 readme = "README.md"
-license = {text = "AGPL-3.0"}
+license = {text = "AGPL-3.0-or-later"}
 requires-python = ">=3.9"
 authors = [
     {name = "Chia-Wei Chiang", email = "chiangjw90@gmail.com"},
@@ -16,7 +16,7 @@ keywords = ["deep-learning", "neural-network", "attention", "linear-complexity",
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]

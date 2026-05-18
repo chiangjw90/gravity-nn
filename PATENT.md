@@ -6,39 +6,52 @@
 
 ---
 
-## What this means for users
+## Dual-License Structure
 
-### Permitted without separate license
+This software is offered under two licensing options. Your choice of option determines the applicable patent terms.
+
+### Option 1: AGPL-3.0
+
+Open-source use under the GNU Affero General Public License version 3.0. Under this option, the patent license granted by AGPL-3.0 Section 11 applies to your use of this software, subject to the conditions and limitations specified therein.
+
+The following uses are permitted under AGPL-3.0 without additional patent license:
 
 - **Academic research:** reading the code, running it for research purposes, citing the paper in academic publications, reproducing the experiments reported in the paper
 - **Personal evaluation:** running the code on personal machines to understand the architecture
 - **Educational use:** teaching the architecture in coursework, presentations, blog posts, or tutorials (with appropriate citation)
-- **Reproducing benchmarks:** running the included benchmarks scripts to verify reported numbers
+- **Reproducing benchmarks:** running the included benchmark scripts to verify reported numbers
+- **Open-source derivatives:** building and distributing modified versions, provided all AGPL-3.0 obligations are met (including source disclosure for network services per Section 13)
 
-These uses fall under the Apache License 2.0 grant in the `LICENSE` file.
+### Option 2: Commercial License
 
-### Requires separate license
+A separate commercial license is available for use cases where AGPL-3.0 obligations are not acceptable. Patent licensing terms are negotiated separately as part of the commercial license agreement and may extend beyond the scope of AGPL-3.0 Section 11.
 
-The following uses are **not** authorized under the Apache 2.0 grant and require a separate written agreement with the rights holder:
+The following uses require a commercial license:
 
-- **Commercial deployment:** integrating Gravity into a product, service, API, or platform offered to customers (paid or free)
-- **Commercial training:** training Gravity-based models on commercial datasets for the purpose of commercial use of the trained weights
-- **Modified commercial works:** building modified versions of Gravity (including hybrids with other architectures) for commercial deployment
+- **Proprietary deployment:** integrating Gravity into a closed-source product, service, API, or platform
+- **Commercial SaaS:** deploying Gravity as part of a network service without disclosing source code
+- **Embedded/hardware:** implementing Gravity in SoC, ASIC, FPGA, or neuromorphic hardware
+- **Commercial training:** training Gravity-based models on commercial datasets for commercial use of the trained weights
 - **Licensing or sublicensing:** offering Gravity (in original or modified form) as part of a licensed software offering
-- **Patent monetization:** asserting patents (your own or third parties') against Gravity or its users based on derivative concepts
 
-### Specifically reserved
+### No License Granted Otherwise
+
+No patent license is granted, expressly or by implication, for any use that does not comply with either Option 1 or Option 2 above.
+
+---
+
+## Specifically Reserved Patent Claims
 
 - The density bottleneck mechanism (compressing K-dimensional field parameters to scalar density via a learnable nonlinear projection before propagation)
-- The directional scan decomposition into 2 × D one-dimensional scans for D-dimensional lattices
+- The directional scan decomposition into 2 x D one-dimensional scans for D-dimensional lattices
 - The combination of scalar density propagation with extracted physics features as a unified inference pipeline
 - The bounded streaming state architecture for autoregressive / online inference
 
 ---
 
-## How to obtain a commercial license
+## How to Obtain a Commercial License
 
-Send a brief inquiry to: chiangjw90@gmail.com
+Send a brief inquiry to: **chiangjw90@gmail.com**
 
 Please include:
 1. Your organization
@@ -49,11 +62,11 @@ Licensing terms are negotiable and depend on use case. Initial conversations are
 
 ---
 
-## Why this dual structure
+## Why This Dual Structure
 
 This repository is published to maximize academic reproducibility, technical scrutiny, and community feedback. The patent ensures the same work cannot be appropriated and commercialized without the rights holder's participation. We believe both reproducibility and intellectual property protection are essential for sustainable research by independent inventors.
 
-If you want to use Gravity in a commercial setting, please reach out—we are friendly and want to make it work.
+If you want to use Gravity in a commercial setting, please reach out — we are friendly and want to make it work.
 
 ---
 
@@ -72,11 +85,11 @@ If you use Gravity in academic work, please cite:
 
 ---
 
-## No warranty
+## No Warranty
 
 This software is provided as-is, without warranty of any kind. Patent pending status does not warrant the validity, scope, or enforceability of any patent claim. Users should consult their own legal counsel for IP-related decisions affecting their work.
 
 ---
 
-*Last updated: [date of repo public release]*
-*Patent application status: provisional filed [filing date]; non-provisional conversion planned within 12 months.*
+*Last updated: May 2026*
+*Patent application status: provisional filed March 2026; non-provisional conversion planned within 12 months.*

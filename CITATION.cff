@@ -9,7 +9,7 @@ type: article
 year: 2026
 url: "https://github.com/chiangjw90/gravity-nn"
 repository-code: "https://github.com/chiangjw90/gravity-nn"
-license: Apache-2.0
+license: AGPL-3.0-or-later
 keywords:
   - neural-network
   - efficient-architecture

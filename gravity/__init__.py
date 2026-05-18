@@ -22,8 +22,9 @@ Building blocks:
 Reference: Chiang (2026), "Gravity: A Physics-Inspired O(N) Framework
 with O(1) Streaming State Across Dimensions"
 
-Patent pending. Apache 2.0 for academic/research use.
-Commercial licensing: chiangjw90@gmail.com
+Copyright (C) 2026 Chia-Wei Chiang. Patent pending.
+AGPL-3.0 for open-source use; commercial license available.
+Contact: chiangjw90@gmail.com | See LICENSE and PATENT.md
 """
 
 # Models
