@@ -250,6 +250,10 @@ pytest tests/ -v
 }
 ```
 
+## Related Work
+
+- [gravity-labeler](https://github.com/chiangjw90/gravity-labeler) — Architecture-agnostic data profiling using a small Gravity probe to assign information locality labels for LLM pretraining data routing ([Paper 2](https://doi.org/10.5281/zenodo.20328022))
+
 ## License
 
 This software is offered under two licensing options:
